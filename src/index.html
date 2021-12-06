@@ -13,17 +13,21 @@
   <body>
     <h1>HTML Form</h1>
 
-    <form onsubmit="onSubmit()"
-    action="https://mate-academy-form-lesson.herokuapp.com/create-application"
-    method="post"
-  >
+    <form
+      onsubmit="onSubmit()"
+      action="https://mate-academy-form-lesson.herokuapp.com/create-application"
+      method="post"
+    >
       <fieldset>
         <legend>Personal information</legend>
         <div class="form-field">
           <label for="surname">Surame:</label>
-          <input type="text" name="surname"
-          id="surname" autocomplete="off"
-          required
+          <input
+            type="text"
+            name="surname"
+            id="surname"
+            autocomplete="off"
+            required
         >
         </div>
         <div class="form-field">
@@ -35,23 +39,32 @@
         </div>
         <div class="form-field">
           <label for="age">How old are you?</label>
-          <input type="number" name="age"
-          id="age" value="12"
-          max="100" required
-        >
+          <input
+            type="number"
+            name="age"
+            id="age"
+            value="12"
+            max="100"
+            required
+          >
         </div>
         <div class="form-field">
           <label for="birth-date">Full date of birth:</label>
-          <input type="date" name="birth-date"
-          id="birth-date" required
-        >
+          <input
+            type="date"
+            name="birth-date"
+            id="birth-date"
+            required
+          >
         </div>
         <div class="form-field">
           <label for="agreement">I accept the term of the agreement</label>
           <input
-          type="checkbox" name="text-of-the-agreement"
-          id="agreement" required
-        >
+            type="checkbox"
+            name="text-of-the-agreement"
+            id="agreement"
+            required
+          >
         </div>
       </fieldset>
 
@@ -60,19 +73,23 @@
         <div class="form-field">
           <label for="email">E-mail:</label>
           <input
-          type="email" name="email"
-          id="email" placeholder="email@example.com"
-          required
-        >
+            type="email"
+            name="email"
+            id="email"
+            placeholder="email@example.com"
+            required
+          >
         </div>
         <div class="form-field">
           <label for="password">Password:</label>
           <input
-          type="password" name="password"
-          id="password" required
-          minlength="5"
-          maxlength="12"
-        >
+            type="password"
+            name="password"
+            id="password"
+            required
+            minlength="5"
+            maxlength="12"
+          >
         </div>
       </fieldset>
 
@@ -127,9 +144,11 @@
         <legend>Additional info:</legend>
         <div class="form-field">
           <label for="comments">Comments:</label>
-          <textarea name="feedback" id="comments"
-         minlength="10"
-         maxlength="500"
+          <textarea
+            name="feedback"
+            id="comments"
+            minlength="10"
+            maxlength="500"
          ></textarea>
         </div>
         <div class="form-field">
