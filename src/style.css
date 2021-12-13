@@ -1,9 +1,18 @@
 /* styles go here */
 .form-field {
-  margin: 10px;
+  margin-bottom: 10px;
 }
 
 fieldset {
   margin-bottom: 20px;
   display: block;
+  padding-bottom: 0;
+}
+
+.inline-bl {
+  display: inline-block;
+}
+
+.input-width {
+  width: 65px;
 }

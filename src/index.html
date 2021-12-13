@@ -11,8 +11,6 @@
     <link rel="stylesheet" href="./style.css">
   </head>
   <body>
-    <h1>HTML Form</h1>
-
     <form
       onsubmit="onSubmit()"
       action="https://mate-academy-form-lesson.herokuapp.com/create-application"
@@ -21,7 +19,7 @@
       <fieldset>
         <legend>Personal information</legend>
         <div class="form-field">
-          <label for="surname">Surame:</label>
+          <label for="surname">Surname:</label>
           <input
             type="text"
             name="surname"
@@ -32,14 +30,18 @@
         </div>
         <div class="form-field">
           <label for="name">Name: </label>
-          <input type="text" name="name"
-          id="name" autocomplete="off"
-          required
-        >
+          <input
+            type="text"
+            name="name"
+            id="name"
+            autocomplete="off"
+            required
+          >
         </div>
         <div class="form-field">
-          <label for="age">How old are you?</label>
+          <label for="age">How old are You?</label>
           <input
+            class="input-width"
             type="number"
             name="age"
             id="age"
@@ -97,13 +99,13 @@
         <legend>An interesting fact about you!</legend>
         <div class="form-field">
         Do you love cats?
-          <div>
+          <div class ="inline-bl">
             <input type="radio" name="like-cats"
           id="yes"
         >
             <label for="yes">Yes</label>
           </div>
-          <div>
+          <div class ="inline-bl">
             <input type="radio" name="like-cats"
           id="no"
         >
@@ -112,14 +114,18 @@
         </div>
         <div class="form-field">
           <label for="color">What is your favorite color?</label>
-          <input type="color" name="fav-color"
-          id="color"
-        >
+          <input
+            type="color"
+            name="fav-color"
+            id="color"
+          >
         </div>
         <div class="form-field">
           <label for="time">What time do you go to bed?</label>
-          <input type="time" name="time-to-bed"
-          id="time"
+          <input
+            type="time"
+            name="time-to-bed"
+            id="time"
           >
         </div>
         <div class="form-field">
@@ -134,9 +140,11 @@
         </div>
         <div class="form-field">
           <label for="rate">How do you rate our work?</label>
-          <input type="range" name="our-rate"
-          id="rate"
-        >
+          <input
+            type="range"
+            name="our-rate"
+            id="rate"
+          >
         </div>
       </fieldset>
 
